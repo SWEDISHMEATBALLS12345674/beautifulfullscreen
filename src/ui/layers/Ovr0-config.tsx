@@ -94,8 +94,13 @@ export default function Ovr0() {
       <BooleanOption id="reverseMusic" name="Reverse music" />
       <SelectOption
         id="alignMusic"
-        name="Music align"
+        name="Music align horizontal"
         options={["left", "center", "right"]}
+      />
+      <SelectOption
+        id="alignMusicVert"
+        name="Music align vertical"
+        options={["bottom", "center", "top"]}
       />
       <SelectOption
         id="putMusic"

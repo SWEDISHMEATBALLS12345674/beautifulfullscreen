@@ -35,6 +35,7 @@ export type Background =
   | "Vibrant non alarming"
   | "Prominent";
 export type AlignMusic = "left" | "center" | "right";
+export type AlignMusicVert = "bottom" | "center" | "top"
 export type VolumeController = "left" | "disable" | "right";
 export type ScreenBorders =
   | "top-left"
@@ -45,18 +46,19 @@ export type ScreenBorders =
 const __defaultConfig__ = {
   trimTitle: false,
   showAllArtists: false,
-  fadeAnimation: false,
+  fadeAnimation: true,
   showLyrics: true,
   enableProgressbar: true,
   enableController: true,
   advancedController: false,
   volumeController: "disable" as VolumeController,
   verticalMode: false,
-  showNextSong: false,
+  showNextSong: true,
   withLyricsSizedMusic: false,
 
   reverseMusic: false,
-  alignMusic: "center" as AlignMusic,
+  alignMusic: "left" as AlignMusic,
+  alignMusicVert: "bottom" as AlignMusicVert,
   putMusic: "center" as AlignMusic,
   background: "Cover" as Background,
 

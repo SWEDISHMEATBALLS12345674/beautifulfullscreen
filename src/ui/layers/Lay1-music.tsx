@@ -11,6 +11,7 @@ export default function Lay1() {
 
   const [putMusic, setPutMusic] = useState(get("putMusic"));
   const [alignMusic, setAlignMusic] = useState(get("alignMusic"));
+  const [alignMusicVert, setAlignMusicVert] = useState(get("alignMusicVert"));
   const [withLyricsSizedMusic, setWithLyricsSizedMusic] = useState(
     get("withLyricsSizedMusic")
   );
@@ -25,6 +26,7 @@ export default function Lay1() {
     const rm = [
       addChangeListener("putMusic", () => setPutMusic(get("putMusic"))),
       addChangeListener("alignMusic", () => setAlignMusic(get("alignMusic"))),
+      addChangeListener("alignMusicVert", () => setAlignMusicVert(get("alignMusic"))),
       addChangeListener("withLyricsSizedMusic", () =>
         setWithLyricsSizedMusic(get("withLyricsSizedMusic"))
       ),
